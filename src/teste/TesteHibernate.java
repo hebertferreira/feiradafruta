@@ -27,7 +27,10 @@ public class TesteHibernate {
 		 * Exercicio 4
 		 * 
 		 * Listar todos esses registros e imprimir na tela.
+		 * 
+		 * TESTE GITHUB!!!
 		 */
+		
 		
 		exercicio1();
 		exercicio2();
