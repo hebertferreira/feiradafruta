@@ -1,21 +1,18 @@
 package teste;
 
+import java.util.List;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.util.GregorianCalendar;
-import java.util.List;
-
-import javax.swing.JOptionPane;
 
 import br.com.feiradafruta.hibernate.HibernateUtil;
+import br.com.feiradafruta.modelo.Empresa;
 import br.com.feiradafruta.modelo.Produto;
 
 public class ParaCasa {
 
 	public static void main(String[] args) {
 		
-		JOptionPane.showMessageDialog(null, "fdsf");
-
 		/*
 		 * 
 		 * Exercicio 1
@@ -36,8 +33,10 @@ public class ParaCasa {
 		 */
 
 		exercicio1();
-		exercicio2();
-		exercicio3();
+      //exercicio2();
+	  //exercicio3();
+		exercicio4();
+	
 
 	}
 
@@ -52,11 +51,8 @@ public class ParaCasa {
 
 			HibernateUtil.salvarOuAtualizar(budega);
 		}
-		
-				
-		
 	}
-	
+/*	
 	public static void exercicio2() {
 		
 		List porcarias = HibernateUtil.listar(new Produto());
@@ -86,5 +82,19 @@ public class ParaCasa {
 
 		
 	}
+	*/
 	
+	public static void exercicio4(){
+		
+		for(int j=0; j<10;j++){
+			
+			Empresa marca = new Empresa();
+			marca.setCodEmpresa("AF"+j);
+			marca.setNome("Empresa"+j);
+			marca.setCnpj("934.803/0001-"+j);
+			
+			HibernateUtil.salvarOuAtualizar(marca);
+		}
+		
+	}
 }

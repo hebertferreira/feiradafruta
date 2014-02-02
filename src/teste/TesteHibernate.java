@@ -1,7 +1,6 @@
 package teste;
 
 import java.util.List;
-
 import br.com.feiradafruta.hibernate.HibernateUtil;
 import br.com.feiradafruta.modelo.Pessoa;
 

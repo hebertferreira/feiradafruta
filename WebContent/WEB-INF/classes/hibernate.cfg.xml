@@ -8,13 +8,15 @@
 	
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/feiradafruta</property>
-		<property name="hibernate.connection.username">fuba</property>
-		<property name="hibernate.connection.password">Aff16253456</property>
+		<property name="hibernate.connection.username">pet</property>
+		<property name="hibernate.connection.password">fpt3c</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
 		<mapping class="br.com.feiradafruta.modelo.Pessoa" />
 		<mapping class="br.com.feiradafruta.modelo.Produto" />
+		<mapping class="br.com.feiradafruta.modelo.Empresa" />
+		
 
 </session-factory>
 </hibernate-configuration>

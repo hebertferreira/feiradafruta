@@ -4,8 +4,11 @@ import java.math.BigDecimal;
 import java.util.GregorianCalendar;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Produto {
@@ -18,6 +21,20 @@ public class Produto {
 	private String nome;
 	private BigDecimal preco;
 	private GregorianCalendar dataValidade;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="codEmpresa")
+	
+	private Empresa fornecedor;
+
+	
+	public Empresa getFornecedor() {
+		return fornecedor;
+	}
+
+	public void setFornecedor(Empresa fornecedor) {
+		this.fornecedor = fornecedor;
+	}
 
 	public Integer getId() {
 		return id;
