@@ -91,7 +91,6 @@ public class ParaCasa {
 			Empresa marca = new Empresa();
 			marca.setCodEmpresa("AF"+j);
 			marca.setNome("Empresa"+j);
-			marca.setCnpj("934.803/0001-"+j);
 			
 			HibernateUtil.salvarOuAtualizar(marca);
 		}

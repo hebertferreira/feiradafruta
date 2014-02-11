@@ -16,7 +16,6 @@ public class Empresa {
 	private Integer id;
 	private String codEmpresa;
 	private String nome;
-	private String cnpj;
 	
 	@OneToMany(mappedBy="fornecedor")
 	
@@ -41,12 +40,6 @@ public class Empresa {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-	public String getCnpj() {
-		return cnpj;
-	}
-	public void setCnpj(String cnpj) {
-		this.cnpj = cnpj;
 	}
 	
 }
